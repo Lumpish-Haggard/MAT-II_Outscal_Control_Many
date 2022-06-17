@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlayerModels {
+public enum PlayerModels { //discontinued enums.
     Null = 0,
     TPose = 1,
     Bench = 2,

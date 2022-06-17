@@ -19,10 +19,10 @@ public class CharacterSwitching : MonoBehaviour
         
     }
 
-    void OnTriggerStay(Collider coll)
+    void OnTriggerStay(Collider Convert)
 
     {   
-        EnumInterface ModelInterface = coll.GetComponent<EnumInterface>();
+        EnumInterface ModelInterface = Convert.GetComponent<EnumInterface>();
         if(ModelInterface != null)
         {
             if(Input.GetKeyDown(KeyCode.E))
@@ -30,7 +30,6 @@ public class CharacterSwitching : MonoBehaviour
                 ModelInterface.ChangePlayer();
             }
         }
-
         
     }
 
