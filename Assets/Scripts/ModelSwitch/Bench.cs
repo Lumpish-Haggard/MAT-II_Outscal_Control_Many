@@ -7,7 +7,7 @@ public class Bench : MonoBehaviour, EnumInterface
     
     public EnumInterface PlayerModel;
 
-    CharacterSwitching SwitchIt;
+    public CharacterSwitching SwitchIt;
 
     public void ChangePlayer()
     {
