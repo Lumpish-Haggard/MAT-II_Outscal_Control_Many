@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    //For Camera movement with mouse
+    public float speedH = 2.0f;
+    public float speedV = 2.0f;
+
+    private float yaw = 0.0f;
+    private float pitch = 0.0f;
+
     //The target object
     public Transform targetObject;
 
@@ -25,8 +32,16 @@ public class CameraFollow : MonoBehaviour
  
     // Update is called once per frame
     void Update()
-    {   
-        
+    {
+        yaw += speedH * Input.GetAxis("Mouse X");
+        pitch -= speedV * Input.GetAxis("Mouse Y");
+
+        yaw = Mathf.Clamp(yaw, -90f, 90f);
+        //the rotation range
+        pitch = Mathf.Clamp(pitch, -60f, 90f);
+        //the rotation range
+
+        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
     }
 
     // Update is called once per frame
@@ -39,6 +54,7 @@ public class CameraFollow : MonoBehaviour
         {
         transform.LookAt(targetObject);
         }
+
     }
 
 }
