@@ -15,8 +15,6 @@ public class Bench : MonoBehaviour, EnumInterface
         SwitchIt.Bench.SetActive(true);
         SwitchIt.Chair.SetActive(false);
         SwitchIt.Hydrant.SetActive(false);
-
-        Debug.Log("Convert to Bench!");
     }
 
 }
