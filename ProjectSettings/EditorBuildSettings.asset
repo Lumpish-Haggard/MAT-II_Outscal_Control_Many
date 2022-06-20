@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/OutdoorsScene.unity
-    guid: 8124e5870f4fd4c779e7a5f994e84ad1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 155e694e5733b51459898ae6bf8367ef
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 2729b20e8bae11d4ba828b4628e35e3e
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 7d0912181943bc04eb243d26e370e0f6
+  - enabled: 1
+    path: Assets/Scenes/WinGame.unity
+    guid: fb92749fbea44b44e92588464b116fb2
   m_configObjects: {}

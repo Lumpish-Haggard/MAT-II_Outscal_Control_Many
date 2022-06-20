@@ -58,4 +58,13 @@ public class PlayerController : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
     }
+
+    private void OnTriggerEnter(Collider Collide)
+    {
+        WinInterface Logic = Collide.gameObject.GetComponent<WinInterface>();
+        if (Logic != null)
+        {
+            Logic.WinScene();
+        }
+    }
 }
