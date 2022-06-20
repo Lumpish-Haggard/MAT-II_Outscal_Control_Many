@@ -18,7 +18,7 @@ public class TimeManager : MonoBehaviour
     void GameTimer()
     {
         TimeSpan timeSpan = TimeSpan.FromSeconds(Time.realtimeSinceStartup);
-        TimerText.text = "Your Time: " + timeSpan.Hours + ":" + timeSpan.Minutes + ":" + timeSpan.Seconds;
+        TimerText.text = "Your Time: " + timeSpan.Hours + " : " + timeSpan.Minutes + " : " + timeSpan.Seconds;
     }
 
 }
