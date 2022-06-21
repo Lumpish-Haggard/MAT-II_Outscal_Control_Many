@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+
         if(isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;

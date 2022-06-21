@@ -8,6 +8,15 @@ using TMPro;
 public class MenuButtons : MonoBehaviour
 {
 
+    private void Update() 
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+    
+    }
+
     public void PlayGame()
     {
      
